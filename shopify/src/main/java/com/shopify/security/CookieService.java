@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 public class CookieService {
 
     // to create a cookie and put the token in it
+    // response here is the http response
     public void addJwtCookie(HttpServletResponse response, String token) {
 
         Cookie cookie = new Cookie("jwt", token);

@@ -38,6 +38,7 @@ public class AuthService {
                 .role(RoleEnum.CUSTOMER)
                 .build();
 
+        // we use .save() to save the user in the database and return it
         User savedUser = userRepository.save(user);
 
         return new RegisterResponseDTO(savedUser.getUsername(), savedUser.getEmail(), savedUser.getRole(), savedUser.getCreated_at());
