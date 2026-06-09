@@ -35,7 +35,7 @@ public class AuthService {
                 .username(request.getUsername())
                 .email(request.getEmail())
                 .password(passwordEncoder.encode(request.getPassword()))
-                .role(RoleEnum.CUSTOMER)
+                .role(RoleEnum.SELLER)
                 .build();
 
         // we use .save() to save the user in the database and return it
